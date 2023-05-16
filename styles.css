@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+body {
+  min-height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  max-width: min(100%, 580px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.first-box {
+  display: flex;
+}
+
+.second-box {
+  padding: 2rem;
+  padding-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+span,
+.bold-para {
+  font-family: "Fraunces", sans-serif;
+}
+
+h1,
+.light-para {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  color: hsla(228, 12%, 48%, 0.95);
+  margin-bottom: 1rem;
+}
+.bold-para {
+  color: hsla(212, 21%, 14%, 0.959);
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 1.3rem;
+}
+
+.light-para {
+  color: hsl(228, 12%, 48%, 0.95);
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-bottom: 1.3rem;
+  font-weight: 500;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.6rem;
+}
+
+.sec-num {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  color: hsla(228, 12%, 48%, 0.795);
+}
+
+.dark-num {
+  font-size: 2rem;
+  padding-right: 1.5rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem 1.8rem;
+  font-size: 0.9rem;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+}
+
+button:active {
+  background-color: hsl(157, 40%, 15%);
+}
+
+.cart {
+  padding-right: 0.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .main-container {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+  }
+
+  .first-box {
+    min-height: 20%;
+  }
+
+  .second-box {
+    max-width: 80%;
+  }
+
+  .number {
+    padding-bottom: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
+}
